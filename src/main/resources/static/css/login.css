@@ -1,0 +1,152 @@
+nav li.nav-item:last-child{line-height:2.2; margin-left: 10px; cursor: pointer;}
+
+.wrapper {
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+.login-row{position: relative; z-index: 9;}
+
+.form-signin {
+    max-width: 380px;
+    padding: 15px 35px 45px;
+    margin: 0 auto;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+    margin-bottom: 30px;
+}
+.form-signin .checkbox {
+    font-weight: normal;
+}
+.form-signin .form-control {
+    position: relative;
+    font-size: 16px;
+    height: auto;
+    padding: 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.form-signin .form-control:focus {
+    z-index: 2;
+}
+.form-signin input[type="text"] {
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+.form-signin input[type="password"] {
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+
+.area {
+    width: 100%;
+    height:90vh;
+}
+
+.circles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:100vh;
+    margin-bottom: 0;
+    overflow: hidden;
+}
+
+.circles li {
+    position: absolute;
+    display: block;
+    list-style: none;
+    width:150px;
+    height:100px;
+    /*background: rgba(255, 255, 255, 0.2);*/
+    animation: animate 25s linear infinite;
+    bottom: -150px;
+
+}
+
+.circles li:nth-child(1) {
+    left:4%;
+    animation-delay: 0s;
+    background: url(/images/bbb-logo.svg) no-repeat 0 0;
+    background-size: contain;
+}
+
+
+.circles li:nth-child(2) {
+    left: 10%;
+    animation-delay:3s;
+    /* animation-duration: 12s; */
+    background: url(/images/okl.png) no-repeat 0 0;
+    background-size: contain;
+}
+
+.circles li:nth-child(3) {
+    right:5%;
+    animation-delay:5s;
+    background: url(/images/bbbaby-logo.svg) no-repeat 0 0;
+    background-size: contain;
+}
+
+.circles li:nth-child(4) {
+    left:30%;
+    animation-delay:4s;
+    /* animation-duration: 18s; */
+    background: url(/images/bbbaby-logo.svg) no-repeat 0 0;
+    background-size: contain;
+}
+
+.circles li:nth-child(5) {
+    right:20%;
+    animation-delay:6s;
+    background: url(/images/decorist-logo.svg) no-repeat 0 0;
+    background-size: contain;
+}
+
+.circles li:nth-child(6) {
+    right:30%;
+    animation-delay:8s;
+    background: url(/images/cts-logo-sm.png) no-repeat 0 0;
+    background-size: contain;
+}
+
+.circles li:nth-child(7) {
+    right:40%;
+    animation-delay:10s;
+    background: url(/images/logo.png) no-repeat 0 0;
+    background-size: contain;
+}
+
+.circles li:nth-child(8) {
+    left: 50%;
+    animation-delay:12s;
+    /* animation-duration: 45s; */
+    background: url(/images/logo_lg.png) no-repeat 0 0;
+    background-size: contain;
+}
+
+.circles li:nth-child(9) {
+    right:50%;
+    animation-delay:14s;
+    /* animation-duration:2s; */
+    background: url(/images/PmallLogo.png) no-repeat 0 0;
+    background-size: contain;
+}
+
+@keyframes animate {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+    100% {
+        transform: translateY(-1000px) rotate(360deg);
+        opacity: 1;
+        border-radius:0;
+    }
+
+}
