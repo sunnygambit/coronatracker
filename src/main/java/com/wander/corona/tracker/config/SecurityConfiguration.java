@@ -17,11 +17,11 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 
 @Configuration
-//@EnableWebSecurity
-//@EnableGlobalMethodSecurity(prePostEnabled = true)
+@EnableWebSecurity
+@EnableGlobalMethodSecurity(prePostEnabled = true)
 class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 
-    @Autowired(required=true)
+    @Autowired
     private UserService userService;
 
     @Override
@@ -69,6 +69,6 @@ class SecurityConfiguration extends WebSecurityConfigurerAdapter {
     @Override
     public void configure(WebSecurity web) throws Exception {
 
-        web.ignoring().antMatchers("/test");
+        web.ignoring().antMatchers("/test","/h2-console","/h2-console/login.jsp","/h2-console/**");
     }
 }

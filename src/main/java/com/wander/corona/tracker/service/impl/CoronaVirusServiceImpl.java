@@ -51,6 +51,6 @@ public class CoronaVirusServiceImpl implements CoronaVirusService {
         } catch (Exception e) {
             System.out.println("Error while preparing the data" + e);
         }
-        return coronaCasesData.subList(0,30);
+        return coronaCasesData;
     }
 }
